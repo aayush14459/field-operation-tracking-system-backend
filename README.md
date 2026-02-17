@@ -163,8 +163,9 @@ Verify installation:
 ```bash
 psql -U postgres -d field_ops_db -f migrations/field_ops_db.sql
 ```
-    Database setup using pgAdmin 4 is now complete.
+   - Database setup using pgAdmin 4 is now complete.
    
+---
 
 3.  **Configure Environment Variables:**
     - After cloning the project and installing the dependencies and setup the database, go to the root folder (same level as package.json) 
@@ -181,7 +182,7 @@ NODE_ENV=development
 DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 ```
    
-
+---
 
 ##  Running the Server
 -   **Development Mode** (with auto-reload):
@@ -195,13 +196,14 @@ DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAM
 ```
     npm start
 ```
-    The server will start at `http://localhost:5000` by default
+ -   The server will start at `http://localhost:5000` by default
 
 ## 📚 API Documentation
 The API is fully documented using Swagger. Once the server is running, visit:
 
  **[http://localhost:5000/api-docs]**,**(http://localhost:5000/api-docs)**
 
+---
 
 ##  Project Structure
 ```
@@ -217,6 +219,7 @@ server/
 ├── server.js           # Entry point
 └── package.json        # Dependencies
 ```
+---
 
 ## 🧪 Key Endpoints
 
