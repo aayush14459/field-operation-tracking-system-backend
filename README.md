@@ -1,7 +1,7 @@
-```
+
 # Field Operations Tracking System Backend
 A robust Node.js/Express backend for a Field Operations Tracking System. This system manages field agents, handles data submissions with automatic scoring and fraud detection, and provides analytics.
-```
+
 
 ## 🚀 Features
 
@@ -11,9 +11,8 @@ A robust Node.js/Express backend for a Field Operations Tracking System. This sy
     -   **Fraud Detection**: Detects GPS mismatches, high velocity, and duplicates.
 -   **Analytics**: Aggregated insights by region(state), status, and category.
 -   **API Documentation**: Integrated Swagger UI.
-```
 
-```
+
 ## 🛠️ Prerequisites
 
 Ensure you have the following installed:
