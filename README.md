@@ -19,8 +19,6 @@ Ensure you have the following installed:
 -   **[Node.js](https://nodejs.org/)** (v14 or higher)
 -   **[PostgreSQL](https://www.postgresql.org/)** (v12 or higher)
 
-```
-```
 ##  setup and Installation
 
 1.  **Clone the repository:**
@@ -136,17 +134,14 @@ During installation:
 - Set and remember your password
 
 Verify installation:
-
-```
  run these command on bash or terminal 
-
+```
  psql --version
  ```
 
 ### 🔹 Step 2:  **Create the database using Command Line Tool (CLI):**
+ run the command on bash or terminal
     ``` 
-    run the command on bash or terminal
-
     psql -U postgres -c "CREATE DATABASE field_ops_db;"
 
     ```
@@ -156,22 +151,19 @@ Verify installation:
     ` migrations/field_ops_db.sql ` (Creates initial schema)
 
    - Example using command line:
+   -    run the command on bash or terminal
     ```
-    run the command on bash or terminal
     psql -U postgres -d field_ops_db -f migrations/field_ops_db.sql
     Database setup using pgAdmin 4 is now complete.
-
     ```
 
 3.  **Configure Environment Variables:**
     - After cloning the project and installing the dependencies and setup the database, go to the root folder (same level as package.json) 
     - Paste the following into the .env.example file Replace values with your own database credentials and then rename it from .env.example to .env
-    - 
-    env
+    - env
     PORT=5000
     DATABASE_URL=postgres://<username>:<password>@localhost:5432/<database_name>
-    # Example: postgres://postgres:your_password@localhost:5432/field_ops_db
-
+    Example: postgres://postgres:your_password@localhost:5432/field_ops_db
     ```
 
 
@@ -193,7 +185,7 @@ The API is fully documented using Swagger. Once the server is running, visit:
 
 
 ##  Project Structure
-
+```
 server/
 ├── migrations/         # SQL migration scripts
 ├── src/
@@ -205,7 +197,7 @@ server/
 │   └── services/       # Business logic (Scoring, Fraud)
 ├── server.js           # Entry point
 └── package.json        # Dependencies
-
+```
 
 ## 🧪 Key Endpoints
 
