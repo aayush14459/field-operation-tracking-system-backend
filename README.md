@@ -19,20 +19,24 @@ Ensure you have the following installed:
 -   **[Node.js](https://nodejs.org/)** (v14 or higher)
 -   **[PostgreSQL](https://www.postgresql.org/)** (v12 or higher)
 
-##  setup and Installation
+## 📦 Setup and Installation
 
 1.  **Clone the repository:**
 
+    ```bash
     git clone <repository-url>
     cd server
-
+    ```
 
 2.  **Install dependencies:**
 
+    ```bash
     npm install
+    ```
 
+3.  **Configure Database:**
 
-3. ## 🗄️ Database installation &  Setup
+## 🗄️ Database Installation & Setup
 
  ### 🗄️ Database Setup Using pgAdmin 4 (GUI Method)
 
@@ -159,12 +163,18 @@ Verify installation:
 
 3.  **Configure Environment Variables:**
     - After cloning the project and installing the dependencies and setup the database, go to the root folder (same level as package.json) 
-    - Paste the following into the .env.example file Replace values with your own database credentials and then rename it from .env.example to .env
+    - create a .env file and Copy `.env.example` to `.env` and set your database credentials. 
       
-   - env
-   - PORT=5000
-   - DATABASE_URL=postgres://<username>:<password>@localhost:5432/<database_name>
-   - Example: postgres://postgres:your_password@localhost:5432/field_ops_db
+ ```text
+PORT=5000
+DB_USER=postgres
+DB_PASSWORD=your_db_password
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=field_ops_db
+NODE_ENV=development
+DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
+```
    
 
 
@@ -180,7 +190,7 @@ Verify installation:
 ```
     npm start
 ```
-    The server will start at `http://localhost:5000`
+    The server will start at `http://localhost:5000` by default
 
 ## 📚 API Documentation
 The API is fully documented using Swagger. Once the server is running, visit:
