@@ -37,7 +37,7 @@ Ensure you have the following installed:
 
 3. ## 🗄️ Database installation &  Setup
 
- ## 🗄️ Database Setup Using pgAdmin 4 (GUI Method)
+ ### 🗄️ Database Setup Using pgAdmin 4 (GUI Method)
 
  ### 🔹 Step 1: Install PostgreSQL 
 
