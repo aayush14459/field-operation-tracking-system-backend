@@ -12,10 +12,11 @@ const options = {
         name: 'API Support',
       },
     },
-    servers: [
+     servers: [
       {
-        url: 'http://localhost:5000',
-        description: 'Development server',
+        url: process.env.NODE_ENV === 'production'
+          ? 'https://field-operation-tracking-system-backend.onrender.com'
+          : 'http://localhost:5000',
       },
     ],
     components: {
