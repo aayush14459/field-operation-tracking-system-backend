@@ -140,10 +140,9 @@ Verify installation:
  ```
 
 ### 🔹 Step 2:  **Create the database using Command Line Tool (CLI):**
- run the command on bash or terminal
-    ``` 
+- run the command on bash or terminal
+   ```
     psql -U postgres -c "CREATE DATABASE field_ops_db;"
-
     ```
 
 ### 🔹 Step 3:Run Migrations:**
@@ -154,8 +153,9 @@ Verify installation:
    -    run the command on bash or terminal
     ```
     psql -U postgres -d field_ops_db -f migrations/field_ops_db.sql
+     ```
     Database setup using pgAdmin 4 is now complete.
-    ```
+   
 
 3.  **Configure Environment Variables:**
     - After cloning the project and installing the dependencies and setup the database, go to the root folder (same level as package.json) 
