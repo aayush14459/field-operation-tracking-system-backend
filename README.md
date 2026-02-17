@@ -160,28 +160,33 @@ Verify installation:
 3.  **Configure Environment Variables:**
     - After cloning the project and installing the dependencies and setup the database, go to the root folder (same level as package.json) 
     - Paste the following into the .env.example file Replace values with your own database credentials and then rename it from .env.example to .env
-    - env
+      
+    env
+   
     PORT=5000
     DATABASE_URL=postgres://<username>:<password>@localhost:5432/<database_name>
     Example: postgres://postgres:your_password@localhost:5432/field_ops_db
-    ```
+   
 
 
 ##  Running the Server
 -   **Development Mode** (with auto-reload):
 -   run command on terminal:
+```
     npm run dev
-
+```
 
 -   **Production Mode:**
 -   run command on terminal:
+```
     npm start
+```
     The server will start at `http://localhost:5000`.
 
 ## 📚 API Documentation
 The API is fully documented using Swagger. Once the server is running, visit:
 
- **[http://localhost:5000/api-docs]**
+ **[http://localhost:5000/api-docs]**,**(http://localhost:5000/api-docs)**
 
 
 ##  Project Structure
