@@ -2,6 +2,9 @@
 # Field Operations Tracking System Backend
 A robust Node.js/Express backend for a Field Operations Tracking System. This system manages field agents, handles data submissions with automatic scoring and fraud detection, and provides analytics.
 
+## Backend live on - https://field-operation-tracking-system-backend.onrender.com/
+## Backend live on using Swagger Api - https://field-operation-tracking-system-backend.onrender.com/api-docs
+
 
 ## 🚀 Features
 
@@ -24,7 +27,7 @@ Ensure you have the following installed:
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/aayush14459/field-operation-tracking-system-backend.git
     cd server
     ```
 
@@ -149,15 +152,17 @@ Verify installation:
     psql -U postgres -c "CREATE DATABASE field_ops_db;"
     ```
 
-### 🔹 Step 3:Run Migrations:**
- -   Connect to your database and execute the migration scripts in the `migrations/` folder in order:
-    ` migrations/field_ops_db.sql ` (Creates initial schema)
+### 🔹 Step 3: Run Migrations
+
+-   Connect to your database and execute the migration scripts in the `migrations/` folder in order:
+    `migrations/field_ops_db.sql` (Creates initial schema)
 
    - Example using command line:
    -    run the command on bash or terminal
-    ```
-    psql -U postgres -d field_ops_db -f migrations/field_ops_db.sql
-     ```
+
+```bash
+psql -U postgres -d field_ops_db -f migrations/field_ops_db.sql
+```
     Database setup using pgAdmin 4 is now complete.
    
 
