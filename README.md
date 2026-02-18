@@ -123,7 +123,7 @@ From left sidebar navigate to: Databases → field_ops_db → Schemas → public
 You should see:
 - `field_agents`
 - `data_submissions`
-Database setup using pgAdmin 4 is now complete. 
+- Database setup using pgAdmin 4 is now complete. 
 ---
 
 
@@ -154,7 +154,7 @@ Verify installation:
 
 ### 🔹 Step 3: Run Migrations
 
--   Connect to your database and execute the migration scripts in the `migrations/` folder in order:
+-   Connect to your database using .env file and execute the migration scripts in the `migrations/` folder in order:
     `migrations/field_ops_db.sql` (Creates initial schema)
 
    - Example using command line:
@@ -163,7 +163,7 @@ Verify installation:
 ```bash
 psql -U postgres -d field_ops_db -f migrations/field_ops_db.sql
 ```
-   - Database setup using pgAdmin 4 is now complete.
+   - Database setup using pgAdmin 4 CLI is now complete.
    
 ---
 
