@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS data_submissions (
     quantity_verified DECIMAL(10, 2),
     quality_metrics JSONB DEFAULT '{}',
     notes TEXT,
-    calculated_score DECIMAL(5, 2),
+    calculated_score DECIMAL(10, 2),
     status VARCHAR(50) DEFAULT 'submitted' CHECK (status IN ('draft', 'submitted', 'verified', 'rejected', 'flagged')),
     fraud_flags JSONB DEFAULT '[]',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
